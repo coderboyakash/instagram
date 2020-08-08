@@ -9,7 +9,7 @@
         <div class="col-9 p-5">
             <div class="d-flex  justify-content-between align-items-baseline">
                 <h3>{{ $user->username }}</h3>
-                <a href="#">Add New Post</a>
+                <a href="/post/create">Add New Post</a>
             </div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>153</strong> posts</div>
