@@ -23,4 +23,9 @@ class PostsController extends Controller
         ]);
         return redirect('/profile/'.auth()->user()->id);
     }
+
+    public function show($id){
+        $post = Post::findOrFail($id);
+        return view('posts.show', compact('post'));
+    }
 }
